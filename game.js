@@ -84,7 +84,7 @@ function mytime(){
 if (myButton==0){	// Startボタンを押した
 myStart=new Date();	// スタート時間を退避
 myButton = 1;
-myInterval=setInterval("myDisp()",1);
+setInterval("myDisp()",1);
 }
 }
 function myDisp(){
