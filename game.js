@@ -22,7 +22,8 @@ function myValue(myData){
 if(totalnum>=1000){
 myData="";}
 
-if(ary[i][j]!=myData){
+
+if(ary[i][j]!=myData){//間違えたら結果画面表示
 var result="<html><head><meta charset=\"UTF-8\"><link rel=\"stylesheet\" type=\"text/css\" href=\"game.css\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no\"></head><body><div class=\"div\"><h1>結果</h1><h2><p>小数点以下";
 
 var res2="桁</h2>タイム";
@@ -77,6 +78,8 @@ j=0;
 
 myButton = 0;	// はんだん
 
+
+/*時間を計算する部分*/
 function mytime(){
 if (myButton==0){	// Startボタンを押した
 myStart=new Date();	// スタート時間を退避
@@ -98,8 +101,9 @@ document.myForm1.myFormTime.value =rtime;
 
 }
 
+/*時間*/
 
-//memorizing
+//memorizing覚えるモード
 
 function mymemo(memonum){
 
